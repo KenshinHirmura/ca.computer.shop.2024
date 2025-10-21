@@ -1,0 +1,43 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      padding-top: 20px;
+    }
+
+    .info-box {
+      background: #8b2d2d;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: left;
+    }
+
+    .info-box h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .info-box ul {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }

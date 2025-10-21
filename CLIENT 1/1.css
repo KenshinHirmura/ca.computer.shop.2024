@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 55px;
+  height: auto;
+}
+
+.logo img {
+  font-size: 2em;
+  color: white;
+  animation: flash 1s linear infinite; 
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }  
+  50% { opacity: 0; }       
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  background: #101ff7;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s;
+   border: 3px solid #ff0000cc;
+  box-shadow: 0 0 25px #ff0000cc;
+}
+
+nav a:hover {
+  background: #101ff7;
+  transform: scale(1.05);
+}
+
+
+.hero {
+  height: 100vh;
+  background: url("ccead19cda4f5fe6f0f219d552a6b54b.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+.hero::before {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+
+.overlay {
+  background: rgba(255, 0, 0, 0.45);
+  padding: 40px 25px;
+  border-radius: 20px;
+  max-width: 700px;
+   border: 3px solid #481aee;
+  box-shadow: 0 0 25px rgba(255,0,0,0.8);
+}
+
+.overlay {
+    transition: all 0.3s ease-in-out; 
+}
+
+.overlay:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+  
+}
+
+.overlay p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.box {
+  background: rgba(0, 180, 255, 0.4);
+  padding: 25px;
+  width: 280px;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+  
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+  animation: floatBox 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatBox {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.7);
+}
+
+.box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.gaming-station-section {
+    background-color: #8B0000; 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; 
+    border: 3px solid #c20b0b;
+  box-shadow: 0 0 25px rgba(255,0,0,0.8);
+}
+
+.gaming-station-section {
+    transition: all 0.3s ease-in-out; 
+}
+
+.gaming-station-section:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+.gaming-station-text {
+    text-align: left;
+}
+
+.gaming-station-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.gaming-station-text ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.gaming-station-text li {
+    margin-bottom: 5px;
+}
+
+.gaming-station-image {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.gaming-station-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.boost-gaming-section {
+    background-color: #374bfa80; 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px; 
+    display: flex;
+    align-items: center; 
+     border: 3px solid #003cff;
+  box-shadow: 0 0 25px rgba(69, 72, 235, 0.8);
+}
+
+.boost-gaming-section {
+    transition: all 0.3s ease-in-out; 
+}
+
+.boost-gaming-section:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+.boost-gaming-image {
+    flex: 1; 
+    text-align: center;
+}
+
+.boost-gaming-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.boost-gaming-text {
+    flex: 1; 
+    text-align: left;
+    padding-left: 20px; 
+}
+
+.boost-gaming-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.boost-gaming-text p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.experience-section {
+    background-color: #374bfa80;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px; 
+    display: flex;
+    align-items: center; 
+     border: 3px solid #003cff;
+  box-shadow: 0 0 25px rgba(69, 72, 235, 0.8);
+}
+
+.experience-section {
+    transition: all 0.3s ease-in-out; 
+}
+
+.experience-section:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+.experience-image {
+    flex: 1; 
+    text-align: center;
+}
+
+.experience-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.experience-text {
+    flex: 1; 
+    text-align: left;
+    padding-left: 20px; 
+}
+
+.experience-text h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.experience-text p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.experience-text ul {
+    list-style-type: disc; 
+}
+
+.experience-text li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .overlay {
+    padding: 25px;
+  }
+
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+

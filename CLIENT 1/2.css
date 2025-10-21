@@ -1,0 +1,55 @@
+body {
+    background-image: url("ccead19cda4f5fe6f0f219d552a6b54b.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    height: 100vh; 
+}
+
+.rates-container {
+    text-align: center;
+    background-color: rgba(69, 37, 247, 0.5); 
+    padding: 100px;
+    margin: 20px auto; 
+    border-radius: 10px;
+    max-width: 900px; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.rates-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.rate-card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.rate-card {
+    transition: all 0.3s ease-in-out; 
+}
+
+.rate-card:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+
+.rate-card h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-top: 0;
+    color: #333;
+}
+
+.rate-card p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000;
+}

@@ -1,0 +1,271 @@
+body {
+  background: url("ccead19cda4f5fe6f0f219d552a6b54b.jpg") no-repeat center center/cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 55px;
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  background: #101ff7;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #0077cc;
+  transform: scale(1.05);
+}
+
+
+.hero {
+  height: 100vh;
+  background: url("ccead19cda4f5fe6f0f219d552a6b54b.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+.hero::before {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+.owner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideUp 1.2s ease-in-out;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .owner-container img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #481aee;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .owner-container img:hover {
+    transform: scale(1.05);
+  }
+
+  .owner-info {
+    background: rgba(255, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(255,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .owner-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255,0,0,0.8);
+  }
+
+  .owner-info h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .owner-info p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .computer-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+  animation: fadeIn 1.2s ease;
+}
+
+
+.computer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.comp-item img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  animation: zoomIn 1s ease;
+  border: 3px solid #481aee;
+  box-shadow: 0 0 25px rgba(255,0,0,0.8);
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+
+ .img:hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255,0,0,0.8);
+ }
+
+.specs-card {
+  background: #7a2020;
+  padding: 25px;
+  border-radius: 25px;
+  width: 350px;
+  text-align: center;
+  line-height: 1.8;
+  animation: fadeUp 1.2s ease;
+  box-shadow: 0 0 10px rgba(255,0,0,0.4);
+}
+
+.specs-card {
+    transition: all 0.3s ease-in-out; 
+}
+
+.specs-card:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+}
+
+
+.specs-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.specs-card {
+  background: #7a2020;
+  padding: 25px;
+  border-radius: 100px;
+  width: 350px;
+  text-align: left;
+  line-height: 1.8;
+  animation: fadeUp 1.2s ease;
+ border: 3px solid #830505;
+  box-shadow: 0 0 25px rgba(255,0,0,0.8);
+}
+
+.about-us-container {
+    background-color: #0634ff; 
+    color: white;
+    padding: 20px;
+    border-radius: 20px; 
+    text-align: center;
+    max-width: 800px; 
+    margin: 20px auto;
+    border: 3px solid #1101f1;
+  box-shadow: 0 0 25px rgba(9, 144, 255, 0.8);
+}
+
+.about-us-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-us-container p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
